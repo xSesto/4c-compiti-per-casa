@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int m1,m2;
+bool perp;
+
+bool intersezione (int m1, int m2, bool perp){
+    int m3;
+    cout<<"inserisci m1";
+    cin>>m1;
+    cout<<"inserisci m2";
+    cin>>m2;
+    m3=-(1/m2);
+    if(m1==m3){
+        perp=true;}
+        else{
+            perp=false;}
+return perp;
+};
+
+int main(){
+    bool perpendicolare;
+cout<<"Verifica perpendicolarità";
+perpendicolare=intersezione(m1,m2,perp);
+return perpendicolare;
+}
