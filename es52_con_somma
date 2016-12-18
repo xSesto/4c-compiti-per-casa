@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int numeri[10];
+int somma;
+int i;
+int main(){
+    somma=0;
+    for(i=0;i<10;i++){
+        cout<<"inserisci il numero: "<<i+1<<"    ";
+        cin>>numeri[i];
+    if(i<3){
+        numeri[i]=numeri[i]*2;
+        cout<<"numero= "<<numeri[i]<<endl;}
+        else{
+            numeri[i]=numeri[i];
+        };
+        somma=somma+numeri[i];
+        
+    };
+    cout<<"la somma e:"<<"     "<<somma;
+    return 0;
+}
